@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import AgentsSection from './components/AgentsSection'
 import FeaturesSection from './components/FeaturesSection'
 import IntegrationsSection from './components/IntegrationsSection'
+import PricingSection from './components/PricingSection'
 import Footer from './components/Footer'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <AgentsSection />
       <FeaturesSection />
       <IntegrationsSection />
+      <PricingSection />
       <Footer />
     </div>
   )
