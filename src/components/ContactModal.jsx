@@ -34,8 +34,8 @@ function ContactModal({ isOpen, onClose, planName }) {
     const encodedMessage = encodeURIComponent(message)
     
     // Número do WhatsApp (formato internacional: código país + DDD + número)
-    // 44 988172852 -> 55 44 988172852 (Brasil + DDD + número)
-    const whatsappNumber = '5544988172852'
+    // 44 988172952 -> 55 44 988172952 (Brasil + DDD + número)
+    const whatsappNumber = '5544988172952'
     
     // Cria o link do WhatsApp
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`

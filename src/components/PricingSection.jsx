@@ -49,10 +49,13 @@ function PricingSection() {
       bgColor: "bg-gradient-to-br from-indigo-50 to-purple-50",
       borderColor: "border-indigo-300",
       features: [
+        { icon: FaWhatsapp, text: "WhatsApp incluso" },
         { icon: FaInfinity, text: "Mensagens ilimitadas" },
         { icon: FaHeadset, text: "Suporte prioritário" },
-        { icon: FaCog, text: "Sistemas personalizados integrados" },
+        { icon: FaDatabase, text: "Conexão com CRM" },
+        { icon: FaCalendarAlt, text: "Sistema de agendamento" },
         { icon: FaGraduationCap, text: "Treinamento recorrente atualizado" },
+        { icon: FaCog, text: "Sistemas personalizados integrados" },
         { icon: FaRocket, text: "Manutenção prioritária" },
         { icon: HiSparkles, text: "Multi-workflows disponíveis" }
       ],
@@ -79,7 +82,7 @@ function PricingSection() {
               key={index}
               className={`${plan.bgColor} rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative border-2 ${plan.borderColor} ${
                 plan.popular ? 'ring-4 ring-purple-300 ring-opacity-50 scale-105' : ''
-              }`}
+              } flex flex-col h-full`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -113,7 +116,7 @@ function PricingSection() {
                 </div>
               </div>
 
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature, featureIndex) => {
                   const IconComponent = feature.icon
                   return (
