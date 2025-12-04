@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa'
 
 function FeaturesSection() {
-  const daiFeatures = [
+  const lunaFeatures = [
     {
       title: "Processamento Multimodal",
       description: "Processa mensagens de texto, áudio e imagens. Transcreve áudios automaticamente e analisa imagens usando IA para entender o contexto da conversa.",
@@ -55,7 +55,7 @@ function FeaturesSection() {
     }
   ]
 
-  const amoraFeatures = [
+  const auroraFeatures = [
     {
       title: "Bloqueio por Interferência Humana",
       description: "Sistema inteligente que detecta quando um humano assume o atendimento e bloqueia temporariamente o bot para evitar conflitos.",
@@ -105,16 +105,16 @@ function FeaturesSection() {
           </p>
         </div>
 
-        {/* Agente Dai */}
+        {/* Agente Luna */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
-              Agente Dai - Clínica de Estética
+              Agente Luna - Clínica de Estética
             </h3>
             <p className="text-gray-600">Funcionalidades específicas do agente de depilação a laser</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {daiFeatures.map((feature, index) => {
+            {lunaFeatures.map((feature, index) => {
               const IconComponent = feature.icon
               return (
                 <div 
@@ -134,16 +134,16 @@ function FeaturesSection() {
           </div>
         </div>
 
-        {/* Agente Amora */}
+        {/* Agente Aurora */}
         <div>
           <div className="text-center mb-12">
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
-              Agente Amora - Clínica Médica
+              Agente Aurora - Clínica Médica
             </h3>
             <p className="text-gray-600">Funcionalidades específicas do agente de cirurgia plástica</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {amoraFeatures.map((feature, index) => {
+            {auroraFeatures.map((feature, index) => {
               const IconComponent = feature.icon
               return (
                 <div 
