@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Documentation
+README.md
+
+# Automation JSON files
+dai_automacao.json
+stellaAmorim_automation (1).json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
