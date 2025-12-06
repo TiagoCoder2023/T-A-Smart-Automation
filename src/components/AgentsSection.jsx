@@ -5,7 +5,7 @@ import { FaSprayCan, FaStethoscope } from 'react-icons/fa'
 function AgentsSection() {
   const agents = [
     {
-      name: "Luna",
+      name: "Dai",
       clinic: "Clínica de Estética",
       specialty: "Depilação a Laser",
       description: "Atendente virtual especializada em depilação a laser, oferecendo informações sobre procedimentos, valores e agendamentos com tecnologia avançada.",
@@ -21,7 +21,7 @@ function AgentsSection() {
       ]
     },
     {
-      name: "Aurora",
+      name: "Amora",
       clinic: "Clínica Médica",
       specialty: "Cirurgia Plástica",
       description: "Assistente virtual da clínica de cirurgia plástica, fornecendo informações detalhadas sobre procedimentos, consultas e orientações pré e pós-operatórias.",

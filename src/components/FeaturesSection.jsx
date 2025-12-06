@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa'
 
 function FeaturesSection() {
-  const lunaFeatures = [
+  const daiFeatures = [
     {
       title: "Processamento Multimodal",
       description: "Processa mensagens de texto, áudio e imagens. Transcreve áudios automaticamente e analisa imagens usando IA para entender o contexto da conversa.",
@@ -55,7 +55,7 @@ function FeaturesSection() {
     }
   ]
 
-  const auroraFeatures = [
+  const amoraFeatures = [
     {
       title: "Bloqueio por Interferência Humana",
       description: "Sistema inteligente que detecta quando um humano assume o atendimento e bloqueia temporariamente o bot para evitar conflitos.",
@@ -105,23 +105,23 @@ function FeaturesSection() {
           </p>
         </div>
 
-        {/* Agente Luna */}
+        {/* Agente Dai */}
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
-              Agente Luna - Clínica de Estética
+              Agente Dai - Clínica de Estética
             </h3>
             <p className="text-gray-600">Funcionalidades específicas do agente de depilação a laser</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {lunaFeatures.map((feature, index) => {
+            {daiFeatures.map((feature, index) => {
               const IconComponent = feature.icon
               return (
                 <div 
                   key={index}
                   className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
-                  <IconComponent className="text-4xl mb-4 text-pink-600" />
+                  <IconComponent className="text-4xl mb-4 text-[#FF6600]" />
                   <h4 className="text-xl font-semibold text-gray-900 mb-3">
                     {feature.title}
                   </h4>
@@ -134,23 +134,23 @@ function FeaturesSection() {
           </div>
         </div>
 
-        {/* Agente Aurora */}
+        {/* Agente Amora */}
         <div>
           <div className="text-center mb-12">
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
-              Agente Aurora - Clínica Médica
+              Agente Amora - Clínica Médica
             </h3>
             <p className="text-gray-600">Funcionalidades específicas do agente de cirurgia plástica</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {auroraFeatures.map((feature, index) => {
+            {amoraFeatures.map((feature, index) => {
               const IconComponent = feature.icon
               return (
                 <div 
                   key={index}
                   className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
                 >
-                  <IconComponent className="text-4xl mb-4 text-purple-600" />
+                  <IconComponent className="text-4xl mb-4 text-[#0066CC]" />
                   <h4 className="text-xl font-semibold text-gray-900 mb-3">
                     {feature.title}
                   </h4>

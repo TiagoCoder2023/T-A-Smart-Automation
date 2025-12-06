@@ -97,7 +97,7 @@ function ContactModal({ isOpen, onClose, planName }) {
               {/* Nome da Empresa */}
               <div>
                 <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-                  <FaBuilding className="text-blue-500" />
+                  <FaBuilding className="text-[#0066CC]" />
                   Nome da Empresa
                 </label>
                 <input
@@ -106,7 +106,7 @@ function ContactModal({ isOpen, onClose, planName }) {
                   value={formData.companyName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0066CC] focus:border-transparent outline-none transition-all"
                   placeholder="Digite o nome da empresa"
                 />
               </div>
@@ -114,7 +114,7 @@ function ContactModal({ isOpen, onClose, planName }) {
               {/* Nome da Pessoa */}
               <div>
                 <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-                  <FaUser className="text-purple-500" />
+                  <FaUser className="text-[#FF6600]" />
                   Nome Completo
                 </label>
                 <input
@@ -123,7 +123,7 @@ function ContactModal({ isOpen, onClose, planName }) {
                   value={formData.personName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0066CC] focus:border-transparent outline-none transition-all"
                   placeholder="Digite seu nome completo"
                 />
               </div>
@@ -131,7 +131,7 @@ function ContactModal({ isOpen, onClose, planName }) {
               {/* Número para Contato */}
               <div>
                 <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-                  <FaPhone className="text-green-500" />
+                  <FaPhone className="text-[#0066CC]" />
                   Número para Contato
                 </label>
                 <input
@@ -140,7 +140,7 @@ function ContactModal({ isOpen, onClose, planName }) {
                   value={formData.contactNumber}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0066CC] focus:border-transparent outline-none transition-all"
                   placeholder="(00) 00000-0000"
                   pattern="[0-9\s\(\)\-]+"
                 />
@@ -149,7 +149,7 @@ function ContactModal({ isOpen, onClose, planName }) {
               {/* Tipo de Plano */}
               <div>
                 <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
-                  <FaTag className="text-pink-500" />
+                  <FaTag className="text-[#FF6600]" />
                   Plano Selecionado
                 </label>
                 <select
@@ -157,7 +157,7 @@ function ContactModal({ isOpen, onClose, planName }) {
                   value={formData.planType}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all bg-white"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0066CC] focus:border-transparent outline-none transition-all bg-white"
                 >
                   <option value="">Selecione o plano</option>
                   <option value="Starter">Starter - R$ 400/mês</option>
@@ -178,7 +178,7 @@ function ContactModal({ isOpen, onClose, planName }) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 px-4 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl font-semibold hover:from-green-600 hover:to-green-700 transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="flex-1 px-4 py-3 bg-gradient-to-r from-[#0066CC] to-[#FF6600] text-white rounded-xl font-semibold hover:from-[#0052A3] hover:to-[#E55A00] transition-all shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>

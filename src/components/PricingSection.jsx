@@ -86,7 +86,7 @@ function PricingSection() {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+                  <span className="bg-gradient-to-r from-[#0066CC] to-[#FF6600] text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
                     Mais Popular
                   </span>
                 </div>
@@ -139,10 +139,10 @@ function PricingSection() {
                 }}
                 className={`w-full py-4 px-6 rounded-xl font-semibold text-white transition-all duration-300 ${
                   plan.custom
-                    ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700'
+                    ? 'bg-gradient-to-r from-[#0066CC] to-[#000000] hover:from-[#0052A3] hover:to-[#1a1a1a]'
                     : plan.popular
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700'
-                    : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700'
+                    ? 'bg-gradient-to-r from-[#FF6600] to-[#0066CC] hover:from-[#E55A00] hover:to-[#0052A3]'
+                    : 'bg-gradient-to-r from-[#0066CC] to-[#FF6600] hover:from-[#0052A3] hover:to-[#E55A00]'
                 } shadow-lg hover:shadow-xl transform hover:scale-105`}
               >
                 {plan.custom ? 'Falar com Vendas' : 'Contratar Agora'}
@@ -151,16 +151,28 @@ function PricingSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-4">
-            Todos os planos incluem setup inicial e configuração do agente de IA
-          </p>
-          <div className="inline-flex items-center gap-2 text-sm text-gray-500">
-            <FaCheck className="text-green-500" />
-            <span>Sem taxa de setup</span>
-            <span className="mx-2">•</span>
-            <FaCheck className="text-green-500" />
-            <span>Cancelamento a qualquer momento</span>
+        <div className="mt-12">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-gradient-to-br from-[#0066CC]/5 to-[#FF6600]/5 rounded-2xl p-6 border-2 border-[#0066CC]/20 mb-6">
+              <h3 className="text-xl font-display font-bold text-gray-900 mb-3">
+                Setup Inicial Personalizado
+              </h3>
+              <p className="text-gray-700 mb-3 leading-relaxed">
+                O valor do setup varia conforme a necessidade da clínica, nível de automações desejadas e integrações solicitadas.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Preparamos uma proposta individual para cada cliente, garantindo que você pague apenas pelo que realmente precisa.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="inline-flex flex-wrap items-center justify-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2">
+                  <FaCheck className="text-green-500" />
+                  <span>Cancelamento a qualquer momento</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

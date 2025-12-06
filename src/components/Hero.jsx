@@ -18,7 +18,7 @@ function Hero() {
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-gray-900 mb-6 leading-tight">
             Agentes de IA
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-pink-500 to-purple-500">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#0066CC] via-[#FF6600] to-[#0066CC]">
               para Clínicas
             </span>
           </h1>
@@ -27,16 +27,16 @@ function Hero() {
             a experiência dos seus pacientes
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2">
-              <HiSparkles className="text-pink-500 text-xl" />
+            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2 border-2 border-[#0066CC]/20">
+              <HiSparkles className="text-[#FF6600] text-xl" />
               <span className="text-gray-700 font-medium">Atendimento 24/7</span>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2">
-              <FaRobot className="text-purple-500 text-xl" />
+            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2 border-2 border-[#0066CC]/20">
+              <FaRobot className="text-[#0066CC] text-xl" />
               <span className="text-gray-700 font-medium">IA Avançada</span>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2">
-              <FaWhatsapp className="text-green-500 text-xl" />
+            <div className="bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg hover:shadow-xl transition-shadow flex items-center gap-2 border-2 border-[#0066CC]/20">
+              <FaWhatsapp className="text-[#FF6600] text-xl" />
               <span className="text-gray-700 font-medium">WhatsApp</span>
             </div>
           </div>

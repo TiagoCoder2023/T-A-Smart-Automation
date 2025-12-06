@@ -16,15 +16,15 @@ function Footer() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex items-center gap-2">
-              <FaRobot className="text-2xl text-purple-400" />
+              <FaRobot className="text-2xl text-[#0066CC]" />
               <span>IA Avançada GPT-4o</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaWhatsapp className="text-2xl text-green-400" />
+              <FaWhatsapp className="text-2xl text-[#FF6600]" />
               <span>WhatsApp Integration</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaBolt className="text-2xl text-yellow-400" />
+              <FaBolt className="text-2xl text-[#FF6600]" />
               <span>n8n Automation</span>
             </div>
           </div>

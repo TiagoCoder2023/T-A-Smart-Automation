@@ -83,7 +83,7 @@ function IntegrationsSection() {
           <p className="text-gray-600 mb-4">
             Precisa de uma integração específica?
           </p>
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#0066CC] to-[#FF6600] text-white px-6 py-3 rounded-full shadow-lg">
             <span className="font-semibold">Desenvolvemos integrações customizadas</span>
           </div>
         </div>

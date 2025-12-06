@@ -32,7 +32,7 @@ function AgentCard({ agent }) {
         <ul className="space-y-2">
           {agent.features.map((feature, index) => (
             <li key={index} className="flex items-start gap-2">
-              <HiCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+              <HiCheckCircle className="text-[#FF6600] mt-1 flex-shrink-0" />
               <span className="text-gray-700">{feature}</span>
             </li>
           ))}

@@ -12,6 +12,9 @@ export default {
         'medical-blue': '#E8F0F8',
         'medical-teal': '#D4E8E4',
         'medical-purple': '#E8E0F0',
+        'brand-blue': '#0066CC',
+        'brand-black': '#000000',
+        'brand-orange': '#FF6600',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
