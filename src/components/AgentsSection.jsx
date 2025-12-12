@@ -7,8 +7,8 @@ function AgentsSection() {
     {
       name: "Luna",
       clinic: "Clínica de Estética",
-      specialty: "Depilação a Laser",
-      description: "Atendente virtual especializada em depilação a laser, oferecendo informações sobre procedimentos, valores e agendamentos com tecnologia avançada.",
+      specialty: "Múltiplos Segmentos",
+      description: "Atendente virtual versátil para clínicas de estética, adaptável a diversos segmentos desde spas e tratamentos faciais até procedimentos capilares e estéticos avançados, oferecendo informações sobre procedimentos, valores e agendamentos com tecnologia avançada.",
       color: "from-pink-400 to-rose-500",
       bgColor: "bg-gradient-to-br from-pink-50 to-rose-50",
       icon: FaSprayCan,
@@ -23,13 +23,13 @@ function AgentsSection() {
     {
       name: "Aurora",
       clinic: "Clínica Médica",
-      specialty: "Cirurgia Plástica",
-      description: "Assistente virtual da clínica de cirurgia plástica, fornecendo informações detalhadas sobre procedimentos, consultas e orientações pré e pós-operatórias.",
+      specialty: "Múltiplas Especialidades",
+      description: "Assistente virtual versátil para clínicas médicas, adaptável a diversas especialidades desde consultas gerais até procedimentos especializados, fornecendo informações detalhadas sobre procedimentos, consultas e orientações pré e pós-operatórias.",
       color: "from-purple-400 to-indigo-500",
       bgColor: "bg-gradient-to-br from-purple-50 to-indigo-50",
       icon: FaStethoscope,
       features: [
-        "Atendimento especializado em cirurgia plástica",
+        "Atendimento especializado em múltiplas áreas",
         "Informações sobre procedimentos",
         "Suporte emocional aos pacientes",
         "Agendamento de consultas",

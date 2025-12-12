@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaWhatsapp, FaComments, FaDatabase, FaPlug } from 'react-icons/fa'
+import { FaWhatsapp, FaComments, FaDatabase, FaPlug, FaChartBar } from 'react-icons/fa'
 import { HiChip } from 'react-icons/hi'
 
 function IntegrationsSection() {
@@ -38,6 +38,13 @@ function IntegrationsSection() {
       icon: HiChip,
       color: "text-indigo-500",
       bgColor: "bg-indigo-50"
+    },
+    {
+      name: "Power BI",
+      description: "Integração com Power BI para visualização de dados, relatórios e dashboards em tempo real dos atendimentos e métricas da clínica.",
+      icon: FaChartBar,
+      color: "text-[#FFB900]",
+      bgColor: "bg-[#FFB900]/10"
     }
   ]
 

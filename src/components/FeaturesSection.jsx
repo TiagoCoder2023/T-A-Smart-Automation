@@ -88,7 +88,7 @@ function FeaturesSection() {
     },
     {
       title: "Atendimento Especializado",
-      description: "Conhecimento especializado em cirurgia plástica, fornecendo informações detalhadas sobre procedimentos, técnicas e cuidados.",
+      description: "Conhecimento adaptável a diversas especialidades médicas, fornecendo informações detalhadas sobre procedimentos, técnicas e cuidados específicos de cada área.",
       icon: FaHospital
     }
   ]
@@ -98,7 +98,7 @@ function FeaturesSection() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
-            Funcionalidades das Automações
+            Funcionalidades das <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066CC] via-[#FF6600] to-[#0066CC]">Automações</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Tecnologias avançadas que tornam nossos agentes inteligentes e eficientes
@@ -111,7 +111,7 @@ function FeaturesSection() {
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
               Agente Luna - Clínica de Estética
             </h3>
-            <p className="text-gray-600">Funcionalidades específicas do agente de depilação a laser</p>
+            <p className="text-gray-600">Funcionalidades adaptáveis para diversos segmentos de estética</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {lunaFeatures.map((feature, index) => {
@@ -140,7 +140,7 @@ function FeaturesSection() {
             <h3 className="text-3xl font-display font-bold text-gray-900 mb-2">
               Agente Aurora - Clínica Médica
             </h3>
-            <p className="text-gray-600">Funcionalidades específicas do agente de cirurgia plástica</p>
+            <p className="text-gray-600">Funcionalidades adaptáveis para diversas especialidades médicas</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {auroraFeatures.map((feature, index) => {

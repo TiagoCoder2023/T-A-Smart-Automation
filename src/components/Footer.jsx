@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaRobot, FaWhatsapp, FaBolt } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
+import n8nIcon from '../assets/n8n-color.svg'
+import openaiIcon from '../assets/openai.svg'
 
 function Footer() {
   return (
@@ -16,7 +18,7 @@ function Footer() {
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <div className="flex items-center gap-2">
-              <FaRobot className="text-2xl text-[#0066CC]" />
+              <img src={openaiIcon} alt="OpenAI" className="w-6 h-6 brightness-0 invert" />
               <span>IA Avançada GPT-4o</span>
             </div>
             <div className="flex items-center gap-2">
@@ -24,7 +26,7 @@ function Footer() {
               <span>WhatsApp Integration</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaBolt className="text-2xl text-[#FF6600]" />
+              <img src={n8nIcon} alt="n8n" className="w-6 h-6" />
               <span>n8n Automation</span>
             </div>
           </div>

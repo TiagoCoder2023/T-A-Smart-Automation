@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaTimes, FaWhatsapp, FaBuilding, FaUser, FaPhone, FaTag } from 'react-icons/fa'
 
-function ContactModal({ isOpen, onClose, planName }) {
+function ContactModal({ isOpen, onClose, planName, billingPeriod = 'monthly' }) {
   const [formData, setFormData] = useState({
     companyName: '',
     personName: '',
@@ -10,6 +10,19 @@ function ContactModal({ isOpen, onClose, planName }) {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
+  
+  useEffect(() => {
+    if (planName) {
+      setFormData(prev => ({ ...prev, planType: planName }))
+    }
+  }, [planName])
+  
+  const getPeriodLabel = (period) => {
+    if (period === 'monthly') return 'Mensal'
+    if (period === 'semiannual') return 'Semestral (10% OFF)'
+    if (period === 'annual') return 'Anual (15% OFF)'
+    return 'Mensal'
+  }
 
   const handleChange = (e) => {
     setFormData({
@@ -28,7 +41,8 @@ function ContactModal({ isOpen, onClose, planName }) {
       `🏢 Empresa: ${formData.companyName}\n` +
       `👤 Nome: ${formData.personName}\n` +
       `📱 Contato: ${formData.contactNumber}\n` +
-      `📦 Plano: ${formData.planType}`
+      `📦 Plano: ${formData.planType}\n` +
+      `📅 Período: ${getPeriodLabel(billingPeriod)}`
 
     // Codifica a mensagem para URL
     const encodedMessage = encodeURIComponent(message)
@@ -158,9 +172,10 @@ function ContactModal({ isOpen, onClose, planName }) {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-[#0066CC] focus:border-transparent outline-none transition-all bg-white"
+                  disabled={!!planName}
                 >
                   <option value="">Selecione o plano</option>
-                  <option value="Starter">Starter - R$ 400/mês</option>
+                  <option value="Starter">Starter - R$ 390/mês</option>
                   <option value="PRO">PRO - R$ 700/mês</option>
                   <option value="Enterprise">Enterprise - Customizado</option>
                 </select>
